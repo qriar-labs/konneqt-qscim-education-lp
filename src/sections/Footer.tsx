@@ -11,7 +11,7 @@ const Footer = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await fetch('https://automation.cloud.konneqt.io/webhook/form-newsletter', {
+      await fetch('https://automation.cloud.konneqt.io/webhook/8d6e9147-4ed0-4595-9825-9f7390e2910e', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
