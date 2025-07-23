@@ -41,7 +41,7 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-semibold mb-4">{locale === 'pt' ? 'Locais' : 'Locations'}</h4>
           <ul className="text-sm text-white/80 space-y-2">
-            <li><strong>US</strong> 7901 Kingssspointe STE 10 – Orlando – Florida, FL 32819, USA</li>
+            <li><strong>US</strong> 7901 Kingspointe STE 10 – Orlando – Florida, FL 32819, USA</li>
             <li><strong>BR</strong> Av. Brigadeiro Faria Lima, 3200 – 3 Andar – Itaim Bibi, São Paulo - SP 04538-132, Brazil</li>
             <li><strong>AE</strong> Emirates Towers, Floor 42 – Dubai – United Arab Emirates</li>
           </ul>
