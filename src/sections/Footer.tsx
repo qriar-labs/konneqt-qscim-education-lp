@@ -34,7 +34,7 @@ const Footer = () => {
               : 'Konneqt empowers organizations to achieve seamless integration and enhanced security. With our innovative products, we promote progress and encourage the adoption of open standards. This approach fosters flexibility and eliminates vendor lock-in, allowing organizations to customize their tech infrastructure to their specific needs.'}
           </p>
           <a href="https://konneqt.io/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
-            {locale === 'pt' ? 'Site Oficial' : 'Official Site'}
+            {locale === 'pt' ? 'Site Oficial' : 'Oficial Site'}
           </a>
         </div>
 
