@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: landing-page-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: landing-page
+  template:
+    metadata:
+      labels:
+        app: landing-page
+    spec:
+      containers:
+      - name: landing-page-container
+        # 1. O nome da imagem deve ser EXATAMENTE o que você acabou de construir
+        image: minha-lp:v1
+        
+        # 2. A política para usar a imagem local
+        imagePullPolicy: IfNotPresent
+        
+        ports:
+        - containerPort: 8080

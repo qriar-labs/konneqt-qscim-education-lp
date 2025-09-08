@@ -1,0 +1,13 @@
+# service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: landing-page-service
+spec:
+  type: NodePort 
+  selector:
+    app: landing-page
+  ports:
+  - protocol: TCP
+    port: 80 
+    targetPort: 8080 
