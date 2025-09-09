@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: landing-page-container
-        # 1. O nome da imagem deve ser EXATAMENTE o que você acabou de construir
+      
         image: harbor.k8s.konneqt.cloud/konneqt-mkt/minha-lp:v1
         
         # 2. A política para usar a imagem local
