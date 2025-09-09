@@ -1,4 +1,5 @@
 apiVersion: apps/v1
+namespace: konneqt-marketing
 kind: Deployment
 metadata:
   name: landing-page-deployment
@@ -15,10 +16,10 @@ spec:
       containers:
       - name: landing-page-container
         # 1. O nome da imagem deve ser EXATAMENTE o que você acabou de construir
-        image: minha-lp:v1
+        image: harbor.k8s.konneqt.cloud/konneqt-mkt/minha-lp:v1
         
         # 2. A política para usar a imagem local
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         
         ports:
         - containerPort: 8080
