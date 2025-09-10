@@ -81,7 +81,7 @@ jobs:
       - name: Set up Kubeconfig
         run: |
           mkdir -p ${HOME}/.kube
-          echo "${{ secrets.KUBE_CONFIG_DEV }}" > ${HOME}/.kube/config
+          echo "${{ secrets.KUBE_CONFIG_MKT }}" > ${HOME}/.kube/config
           chmod 600 ${HOME}/.kube/config
       
       - name: Update Kubernetes manifests
