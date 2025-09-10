@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-namespace: konneqt-marketing
+namespace: pages-mkt
 kind: Deployment
 metadata:
   name: landing-page-deployment
