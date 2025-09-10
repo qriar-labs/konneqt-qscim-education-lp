@@ -1,8 +1,9 @@
 apiVersion: apps/v1
-namespace: pages-mkt
 kind: Deployment
 metadata:
+  namespace: pages-mkt
   name: landing-page-deployment
+  
 spec:
   replicas: 1
   selector:
