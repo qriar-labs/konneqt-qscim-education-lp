@@ -19,7 +19,7 @@ spec:
       
         image: harbor.k8s.konneqt.cloud/konneqt-mkt/minha-lp:v1
         
-        # 2. A política para usar a imagem local
+       
         imagePullPolicy: Always
         
         ports:

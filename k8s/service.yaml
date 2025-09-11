@@ -3,6 +3,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: landing-page-service
+  namespace: pages-mkt
 spec:
   type: NodePort 
   selector:
