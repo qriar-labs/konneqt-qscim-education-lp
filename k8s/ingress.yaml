@@ -15,7 +15,7 @@ spec:
         - qscim-education-lp.k8s.konneqt.cloud
       secretName: qscim-education-lp-tls
   rules:
-    - host: "qscim-education-k8s.lp.konneqt.cloud"
+    - host: "qscim-education-lp.k8s.konneqt.cloud"
       http:
         paths:
           - path: /
