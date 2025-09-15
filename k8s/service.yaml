@@ -1,0 +1,14 @@
+# service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: qscim-education-landing-page-service
+  namespace: pages-mkt
+spec:
+  type: NodePort 
+  selector:
+    app: qscim-education-landing-page
+  ports:
+  - protocol: TCP
+    port: 80 
+    targetPort: 8080 

@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: pages-mkt
+  name: qscim-education-landing-page-deployment
+  
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: qscim-education-landing-page
+  template:
+    metadata:
+      labels:
+        app: qscim-education-landing-page
+    spec:
+      containers:
+      - name: qscim-education-landing-page-container
+      
+        image: harbor.k8s.konneqt.cloud/konneqt-mkt/qscim-education:v1
+        
+       
+        imagePullPolicy: Always
+        
+        ports:
+        - containerPort: 8080
