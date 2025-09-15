@@ -12,10 +12,10 @@ spec:
   ingressClassName: traefik
   tls:
     - hosts:
-        - qscim-education-lp.k8s.konneqt.cloud
+        - qscim-education.lp.konneqt.io
       secretName: qscim-education-lp-tls
   rules:
-    - host: "qscim-education-lp.k8s.konneqt.cloud"
+    - host: "qscim-education.lp.konneqt.io"
       http:
         paths:
           - path: /
